@@ -59,5 +59,3 @@ export function validarAtualizacaoProduto(req, res, next) {
 
     next();
 }
-
-
