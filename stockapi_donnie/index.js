@@ -17,7 +17,8 @@ app.get('/health', (req, res) => res.json({ status: 'OK' }));
 app.use('/api/v1/stockapi', produtosRoutes);
 app.use('/api/v1/stockapi', categoriaRoutes);
 app.use('/api/v1/stockapi', itensPedidosRoutes);
-app.use('/app/v1/stockapi', usuariosRoutes.js); //http://localhost:3000/api/v1/stockapi/usuarios
+app.use('/app/v1/stockapi', usuariosRoutes.js); 
+//http://localhost:3000/api/v1/stockapi_donnie/usuarios
 
 app.use((req, res) => {
     res.status(404).json({ erro: `Rota ${req.method} ${req.originalUrl} não encontrada` });
